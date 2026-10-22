@@ -102,7 +102,7 @@ Este GitHub es la bitácora técnica de ese camino: lo que construyo con IA, lo 
 
 ## 🛠️ C A J A &nbsp; D E &nbsp; H E R R A M I E N T A S
 
-**Diseño y producto** · Figma, design systems, Jira, Notion, Amplitude, Mixpanel<br>
+**Diseño y producto** · Figma, Jira, Notion<br>
 **Construir con IA** · Claude, Antigravity, n8n, Supabase, Vercel, GitHub
 
 <p>
