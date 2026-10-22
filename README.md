@@ -119,4 +119,6 @@ Este GitHub es la bitácora técnica de ese camino: lo que construyo con IA, lo 
 
 ---
 
+<img src="./assets/footer.svg" alt="Un gatito y un destello de IA sentados junto a una fogata" width="100%">
+
 <p align="center"><sub>hecho con ☁️ desde Buenos Aires</sub></p>
