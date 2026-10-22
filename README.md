@@ -120,6 +120,6 @@ Este GitHub es la bitácora técnica de ese camino: lo que construyo con IA, lo 
 
 ---
 
-<img src="./assets/footer.svg" alt="Ventana retro universo.exe con un gatito blob celeste, pixel art" width="100%">
+<img src="./assets/footer.svg" alt="Ventana retro universo.exe con un gatito blob celeste" width="100%">
 
 <p align="center"><sub>hecho con ☁️ desde Buenos Aires</sub></p>
