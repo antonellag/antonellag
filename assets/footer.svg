@@ -1,117 +1,151 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="pt pd" shape-rendering="crispEdges">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="pt pd">
   <title id="pt">Ventana retro "universo.exe" con un gatito blob celeste</title>
-  <desc id="pd">Una ventana estilo Windows retro llamada universo.exe, con un gatito blob celeste de ojitos cerrados y mejillas rosas, cielo con nubes y pasto, pixel art.</desc>
+  <desc id="pd">Una ventana estilo retro llamada universo.exe, con un gatito blob celeste de ojitos cerrados y mejillas rosas, cielo con nubes y destellos, en el mismo estilo que la portada.</desc>
   <defs>
+    <linearGradient id="fsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2F86D6"/>
+      <stop offset="0.55" stop-color="#6DB6F2"/>
+      <stop offset="1" stop-color="#CFEAFF"/>
+    </linearGradient>
+    <linearGradient id="fchrome" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.45" stop-color="#E4F3FF"/>
+      <stop offset="0.55" stop-color="#9FD0FA"/>
+      <stop offset="1" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <radialGradient id="fbubble" cx="0.35" cy="0.3" r="0.75">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.35" stop-color="#D6EEFF"/>
+      <stop offset="1" stop-color="#5FA8EE"/>
+    </radialGradient>
+    <radialGradient id="fbubblePink" cx="0.35" cy="0.3" r="0.75">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.4" stop-color="#FFE0F0"/>
+      <stop offset="1" stop-color="#F59CC8"/>
+    </radialGradient>
+    <linearGradient id="fstar" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#BFE2FF"/>
+    </linearGradient>
+    <linearGradient id="fgrass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8FD6A0"/>
+      <stop offset="1" stop-color="#4E9B5E"/>
+    </linearGradient>
+    <filter id="fsoft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <filter id="fglow" x="-30%" y="-40%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#1D5FA3" flood-opacity="0.35"/>
+    </filter>
+    <symbol id="fsparkle" viewBox="-10 -10 20 20">
+      <path d="M0 -10 C1 -2 2 -1 10 0 C2 1 1 2 0 10 C-1 2 -2 1 -10 0 C-2 -1 -1 -2 0 -10Z" fill="url(#fstar)"/>
+    </symbol>
+    <symbol id="fcloud" viewBox="0 0 300 120">
+      <g fill="#FFFFFF">
+        <ellipse cx="80" cy="80" rx="70" ry="38"/>
+        <ellipse cx="150" cy="58" rx="62" ry="50"/>
+        <ellipse cx="220" cy="80" rx="72" ry="36"/>
+        <ellipse cx="150" cy="92" rx="120" ry="26"/>
+      </g>
+    </symbol>
     <style>
-      .wbob { animation: wbob 2.4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
-      .wtwinkle { animation: wtwinkle 1.6s steps(2) infinite; }
-      .wtwinkle.d2 { animation-delay: -0.6s; }
-      .wspark { animation: wspark 2.2s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
-      .wcursor { animation: wcursor 2s ease-in-out infinite; }
-      .wcloud { animation: wcloud 14s linear infinite; }
-      .wcloud.d2 { animation-delay: -6s; animation-duration: 18s; }
-      @keyframes wbob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
-      @keyframes wtwinkle { 0%,100% { opacity: 0.4; } 50% { opacity: 1; } }
-      @keyframes wspark { 0%,100% { transform: scale(1) rotate(0deg); } 50% { transform: scale(1.15) rotate(10deg); } }
-      @keyframes wcursor { 0%,100% { transform: translate(0,0); } 50% { transform: translate(-6px,6px); } }
-      @keyframes wcloud { from { transform: translateX(-40px); } to { transform: translateX(40px); } }
+      .fdrift-a { animation: fdrift 40s linear infinite; }
+      .fbob { animation: fbob 4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      .ftwinkle { animation: ftwinkle 3s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      .ftwinkle.d2 { animation-delay: -1s; }
+      .ftwinkle.d3 { animation-delay: -2s; }
+      .fblink { animation: fblink 1.1s steps(1) infinite; }
+      .fspin { animation: fspin 14s linear infinite; transform-box: fill-box; transform-origin: center; }
+      @keyframes fdrift { from { transform: translateX(-40px); } 50% { transform: translateX(40px); } to { transform: translateX(-40px); } }
+      @keyframes fbob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+      @keyframes ftwinkle { 0%,100% { opacity: .35; transform: scale(.7); } 50% { opacity: 1; transform: scale(1.1); } }
+      @keyframes fblink { 50% { opacity: 0; } }
+      @keyframes fspin { to { transform: rotate(360deg); } }
       @media (prefers-reduced-motion: reduce) {
-        .wbob, .wtwinkle, .wspark, .wcursor, .wcloud { animation: none; }
+        .fdrift-a, .fbob, .ftwinkle, .fblink, .fspin { animation: none; }
       }
+      .fmono { font-family: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace; font-weight: 700; }
     </style>
-    <clipPath id="wscreen"><rect x="40" y="76" width="1120" height="204"/></clipPath>
+    <clipPath id="fframe"><rect width="1200" height="320" rx="24"/></clipPath>
+    <clipPath id="fscreen"><rect x="40" y="66" width="1120" height="214" rx="10"/></clipPath>
   </defs>
 
-  <!-- window backdrop -->
-  <rect width="1200" height="320" fill="#0B2A4A"/>
+  <g clip-path="url(#fframe)">
+    <rect width="1200" height="320" fill="url(#fsky)"/>
 
-  <!-- window frame -->
-  <rect x="24" y="20" width="1152" height="280" rx="14" fill="#2F86D6"/>
-  <rect x="34" y="66" width="1132" height="224" fill="#6DB6F2"/>
+    <!-- window frame, glossy chrome like the hero's title text -->
+    <rect x="20" y="16" width="1160" height="288" rx="18" fill="url(#fchrome)" filter="url(#fglow)"/>
+    <rect x="30" y="56" width="1140" height="234" rx="10" fill="url(#fsky)"/>
 
-  <!-- title bar -->
-  <g>
-    <rect x="24" y="20" width="1152" height="46" rx="14" fill="#2F86D6"/>
-    <rect x="24" y="46" width="1152" height="20" fill="#2F86D6"/>
-    <text x="52" y="52" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-weight="700" font-size="24" fill="#FFFFFF" letter-spacing="1">universo.exe</text>
-    <!-- window controls -->
-    <rect x="1030" y="32" width="34" height="24" fill="#153A63"/>
-    <rect x="1040" y="42" width="14" height="4" fill="#FFFFFF"/>
-    <rect x="1074" y="32" width="34" height="24" fill="#153A63"/>
-    <rect x="1082" y="38" width="18" height="12" fill="none" stroke="#FFFFFF" stroke-width="3"/>
-    <rect x="1118" y="32" width="34" height="24" fill="#E8546B"/>
-    <rect x="1128" y="40" width="14" height="4" fill="#FFFFFF" transform="rotate(45 1135 42)"/>
-    <rect x="1128" y="40" width="14" height="4" fill="#FFFFFF" transform="rotate(-45 1135 42)"/>
-  </g>
+    <!-- title bar -->
+    <rect x="20" y="16" width="1160" height="40" rx="18" fill="url(#fchrome)"/>
+    <rect x="20" y="36" width="1160" height="20" fill="#E4F3FF"/>
+    <text x="48" y="42" class="fmono" font-size="20" fill="#1D5FA3" letter-spacing="1">universo.exe</text>
+    <circle cx="1120" cy="36" r="11" fill="url(#fbubblePink)"/>
+    <circle cx="1080" cy="36" r="11" fill="url(#fbubble)"/>
+    <circle cx="1040" cy="36" r="11" fill="url(#fbubble)"/>
 
-  <g clip-path="url(#wscreen)">
-    <!-- sky -->
-    <rect x="34" y="66" width="1132" height="224" fill="#9FD0FA"/>
-
-    <!-- clouds -->
-    <g class="wcloud" fill="#FFFFFF">
-      <rect x="110" y="92" width="126" height="36"/>
-      <rect x="138" y="68" width="84" height="36"/>
-      <rect x="930" y="124" width="140" height="36"/>
-      <rect x="965" y="100" width="84" height="36"/>
-    </g>
-    <g class="wcloud d2" fill="#FFFFFF">
-      <rect x="490" y="82" width="112" height="30"/>
-      <rect x="510" y="62" width="70" height="30"/>
-    </g>
-
-    <!-- grass ground -->
-    <rect x="34" y="242" width="1132" height="48" fill="#4E9B5E"/>
-    <rect x="34" y="242" width="1132" height="10" fill="#6BC47A"/>
-    <rect x="200" y="236" width="60" height="8" fill="#6BC47A"/>
-    <rect x="860" y="236" width="70" height="8" fill="#6BC47A"/>
-
-    <!-- cursor, pointing at the cat -->
-    <g transform="translate(760 130)" class="wcursor">
-      <polygon points="0,0 0,46 12,34 20,52 30,48 22,30 40,30" fill="#FFFFFF" stroke="#153A63" stroke-width="4" stroke-linejoin="round"/>
-    </g>
-
-    <!-- gatito blob celeste, todo con círculos redondeados -->
-    <g transform="translate(470 250)"><g class="wbob">
-      <!-- ear outlines, pointed like a cat (not round like a mouse), behind the body -->
-      <path d="M -82,-40 Q -90,-95 -48,-130 Q -6,-95 -14,-40 Z" fill="#102A43"/>
-      <path d="M 14,-40 Q 6,-95 48,-130 Q 90,-95 82,-40 Z" fill="#102A43"/>
-      <!-- body outline -->
-      <circle cx="0" cy="8" r="92" fill="#102A43"/>
-      <!-- ear fills -->
-      <path d="M -72,-44 Q -78,-88 -48,-118 Q -18,-88 -24,-44 Z" fill="#D6EEFF"/>
-      <path d="M 24,-44 Q 18,-88 48,-118 Q 78,-88 72,-44 Z" fill="#D6EEFF"/>
-      <!-- inner ear, lighter -->
-      <path d="M -62,-48 Q -66,-80 -48,-102 Q -30,-80 -34,-48 Z" fill="#EAF6FF"/>
-      <path d="M 34,-48 Q 30,-80 48,-102 Q 66,-80 62,-48 Z" fill="#EAF6FF"/>
-      <!-- body fill, drawn last to tuck the base of the ears behind it -->
-      <circle cx="0" cy="8" r="84" fill="#D6EEFF"/>
-
-      <!-- closed happy eyes -->
-      <g fill="#153A63">
-        <rect x="-44" y="-16" width="22" height="7"/>
-        <rect x="-50" y="-10" width="8" height="7"/>
-        <rect x="22" y="-16" width="22" height="7"/>
-        <rect x="42" y="-10" width="8" height="7"/>
+    <g clip-path="url(#fscreen)">
+      <!-- clouds, soft and blurred like the hero's far clouds -->
+      <g class="fdrift-a" opacity="0.6" filter="url(#fsoft)">
+        <use href="#fcloud" x="60" y="70" width="180" height="70"/>
+        <use href="#fcloud" x="880" y="90" width="200" height="80"/>
+      </g>
+      <g opacity="0.85">
+        <use href="#fcloud" x="480" y="64" width="140" height="56"/>
       </g>
 
-      <!-- blush -->
-      <circle cx="-54" cy="14" r="11" fill="#F59CC8"/>
-      <circle cx="54" cy="14" r="11" fill="#F59CC8"/>
+      <!-- sparkles -->
+      <use href="#fsparkle" class="ftwinkle" x="300" y="90" width="20" height="20"/>
+      <use href="#fsparkle" class="ftwinkle d2" x="860" y="170" width="18" height="18"/>
+      <use href="#fsparkle" class="ftwinkle d3" x="990" y="90" width="16" height="16"/>
 
-      <!-- mouth -->
-      <rect x="-10" y="20" width="6" height="6" fill="#153A63"/>
-      <rect x="-4" y="26" width="8" height="6" fill="#153A63"/>
-      <rect x="4" y="20" width="6" height="6" fill="#153A63"/>
+      <!-- grass -->
+      <rect x="30" y="246" width="1140" height="44" fill="url(#fgrass)"/>
+      <rect x="30" y="246" width="1140" height="8" fill="#A8E6B4" opacity="0.8"/>
 
-      <!-- paws -->
-      <circle cx="-42" cy="78" r="26" fill="#D6EEFF" stroke="#102A43" stroke-width="8"/>
-      <circle cx="42" cy="78" r="26" fill="#D6EEFF" stroke="#102A43" stroke-width="8"/>
-      <circle cx="98" cy="56" r="18" fill="#D6EEFF" stroke="#102A43" stroke-width="8"/>
-    </g></g>
+      <!-- pixel cursor, same motif as the hero, pointing at the cat -->
+      <g transform="translate(700 150)"><g class="fbob">
+        <path d="M0 0 h6 v6 h6 v6 h6 v6 h6 v6 h-12 v12 h-6 v-6 h-6 v6 h-6 z" fill="#FFFFFF" stroke="#1D5FA3" stroke-width="3" stroke-linejoin="round"/>
+      </g></g>
 
-    <!-- stars inside the screen, twinkling -->
-    <rect class="wtwinkle" x="300" y="90" width="8" height="8" fill="#FFFFFF"/>
-    <rect class="wtwinkle d2" x="860" y="170" width="8" height="8" fill="#FFFFFF"/>
+      <!-- gatito, bubble gradient + glossy highlight, same technique as the hero's floating bubbles -->
+      <g transform="translate(470 250)"><g class="fbob">
+        <!-- ear outlines -->
+        <path d="M -82,-40 Q -90,-95 -48,-130 Q -6,-95 -14,-40 Z" fill="#1D5FA3" opacity="0.25"/>
+        <path d="M 14,-40 Q 6,-95 48,-130 Q 90,-95 82,-40 Z" fill="#1D5FA3" opacity="0.25"/>
+        <!-- ear fills, bubble gradient -->
+        <path d="M -78,-42 Q -85,-92 -48,-124 Q -11,-92 -18,-42 Z" fill="url(#fbubble)"/>
+        <path d="M 18,-42 Q 11,-92 48,-124 Q 85,-92 78,-42 Z" fill="url(#fbubble)"/>
+        <!-- inner ear, soft pink like the hero's pink bubbles -->
+        <path d="M -62,-48 Q -66,-80 -48,-102 Q -30,-80 -34,-48 Z" fill="url(#fbubblePink)"/>
+        <path d="M 34,-48 Q 30,-80 48,-102 Q 66,-80 62,-48 Z" fill="url(#fbubblePink)"/>
+
+        <!-- body, bubble gradient -->
+        <circle cx="0" cy="8" r="92" fill="url(#fbubble)"/>
+        <!-- glossy highlight, same device as the hero's bubble highlights -->
+        <ellipse cx="-34" cy="-34" rx="22" ry="13" fill="#FFFFFF" opacity="0.8"/>
+
+        <!-- closed happy eyes -->
+        <g fill="#1D5FA3">
+          <rect x="-44" y="-16" width="22" height="7" rx="3"/>
+          <rect x="-50" y="-10" width="8" height="7" rx="3"/>
+          <rect x="22" y="-16" width="22" height="7" rx="3"/>
+          <rect x="42" y="-10" width="8" height="7" rx="3"/>
+        </g>
+
+        <!-- blush -->
+        <circle cx="-54" cy="14" r="11" fill="#F59CC8" opacity="0.8"/>
+        <circle cx="54" cy="14" r="11" fill="#F59CC8" opacity="0.8"/>
+
+        <!-- mouth -->
+        <path d="M -10,22 Q 0,32 10,22" fill="none" stroke="#1D5FA3" stroke-width="4" stroke-linecap="round"/>
+
+        <!-- paws -->
+        <circle cx="-42" cy="78" r="26" fill="url(#fbubble)"/>
+        <circle cx="42" cy="78" r="26" fill="url(#fbubble)"/>
+        <circle cx="98" cy="56" r="18" fill="url(#fbubble)"/>
+      </g></g>
+    </g>
   </g>
 </svg>
