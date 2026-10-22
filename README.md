@@ -113,8 +113,9 @@ Este GitHub es la bitácora técnica de ese camino: lo que construyo con IA, lo 
 
 ## 📡 B I T Á C O R A
 
-- 📚 Cursando la diplomatura **Full Stack Developer** en Global Academy: hoy en HTML y CSS
+- 📚 Cursando la diplomatura **Full Stack Developer** en Global Academy
 - 🎬 Armando la primera versión de mi **Cinemateca**
+- 🌱 Construyendo mis proyectos propios: **Monto** y **Kokoro**
 - ☁️ Rediseñando mi web como un universo 3D interactivo
 
 ---
