@@ -106,7 +106,7 @@ Este GitHub es la bitácora técnica de ese camino: lo que construyo con IA, lo 
 **Construir con IA** · Claude, Antigravity, n8n, Supabase, Vercel, GitHub
 
 <p>
-  <img src="https://skillicons.dev/icons?i=figma,html,css,js,react,nodejs,mongodb,supabase,vercel,github&theme=light" alt="Figma, HTML, CSS, JavaScript, React, Node.js, MongoDB, Supabase, Vercel, GitHub">
+  <img src="https://skillicons.dev/icons?i=figma,html,css,vercel,github&theme=light" alt="Figma, HTML, CSS, Vercel, GitHub">
 </p>
 
 <sub>Ruta de aprendizaje: <b>HTML · CSS</b> ✦ JavaScript → React → Node + Express → MongoDB</sub>
