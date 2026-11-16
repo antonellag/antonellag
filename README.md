@@ -55,7 +55,7 @@ Este GitHub es la bitácora técnica de ese camino: lo que construyo con IA, lo 
 
 Plataforma de orientación vocacional con IA de punta a punta: arma un recorrido de aprendizaje personalizado a partir de tu CV, una conversación guiada y un test vocacional RIASEC. Un agente conversacional lleva el discovery, otro genera el recorrido cruzando el test con todo lo charlado (sin inventar cursos ni repetir el mismo tema en formatos distintos), y un tercero extrae la info real de tu CV aunque venga con el desorden de un PDF. Prompt engineering iterativo, salidas en JSON Schema, rate limiting y manejo server-side de la API key — construido para el Hackathon CoderCUP IA de Coderhouse.
 
-`React` `TypeScript` `Vercel` `Gemini` · *construido con IA*
+`React` `TypeScript` `Vercel` `Gemini` · *construido con Claude Code*
 <br>✅ [demo en vivo](https://career-copilot-coderhouse.vercel.app) · [video](https://youtu.be/qslOCPU4wwQ) · [repo](https://github.com/antonellag/career-copilot-coderhouse)
 
 ---
