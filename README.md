@@ -51,6 +51,15 @@ Este GitHub es la bitácora técnica de ese camino: lo que construyo con IA, lo 
 
 <table>
   <tr>
+    <td width="100%" valign="top">
+      <h4>🧭 Career Copilot</h4>
+      <i>"No empieces por estudiar. Empezá por quién querés ser."</i><br><br>
+      Plataforma de orientación vocacional con IA de punta a punta: arma un recorrido de aprendizaje personalizado a partir de tu CV, una conversación guiada y un test vocacional RIASEC. Un agente conversacional lleva el discovery, otro genera el recorrido cruzando el test con todo lo charlado (sin inventar cursos ni repetir el mismo tema en formatos distintos), y un tercero extrae la info real de tu CV aunque venga con el desorden de un PDF. Prompt engineering iterativo, salidas en JSON Schema, rate limiting y manejo server-side de la API key — construido para el Hackathon CoderCUP IA de Coderhouse.<br><br>
+      <code>React</code> <code>TypeScript</code> <code>Vercel</code> <code>Gemini</code> · <i>construido con IA</i><br>
+      <sub>✅ <a href="https://career-copilot-coderhouse.vercel.app">demo en vivo</a> · <a href="https://youtu.be/qslOCPU4wwQ">video</a> · <a href="https://github.com/antonellag/career-copilot-coderhouse">repo</a></sub>
+    </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <h4>🎬 Cinemateca</h4>
       Mi espacio de cine: películas favoritas, fichas y reseñas. Crece conmigo, de HTML y CSS a JavaScript y React.<br><br>
