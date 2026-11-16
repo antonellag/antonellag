@@ -49,45 +49,50 @@ Este GitHub es la bitácora técnica de ese camino: lo que construyo con IA, lo 
 
 ## 🚀 P R O Y E C T O S
 
-<table>
-  <tr>
-    <td width="100%" valign="top">
-      <h4>🧭 Career Copilot</h4>
-      <i>"No empieces por estudiar. Empezá por quién querés ser."</i><br><br>
-      Plataforma de orientación vocacional con IA de punta a punta: arma un recorrido de aprendizaje personalizado a partir de tu CV, una conversación guiada y un test vocacional RIASEC. Un agente conversacional lleva el discovery, otro genera el recorrido cruzando el test con todo lo charlado (sin inventar cursos ni repetir el mismo tema en formatos distintos), y un tercero extrae la info real de tu CV aunque venga con el desorden de un PDF. Prompt engineering iterativo, salidas en JSON Schema, rate limiting y manejo server-side de la API key — construido para el Hackathon CoderCUP IA de Coderhouse.<br><br>
-      <code>React</code> <code>TypeScript</code> <code>Vercel</code> <code>Gemini</code> · <i>construido con IA</i><br>
-      <sub>✅ <a href="https://career-copilot-coderhouse.vercel.app">demo en vivo</a> · <a href="https://youtu.be/qslOCPU4wwQ">video</a> · <a href="https://github.com/antonellag/career-copilot-coderhouse">repo</a></sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h4>🎬 Cinemateca</h4>
-      Mi espacio de cine: películas favoritas, fichas y reseñas. Crece conmigo, de HTML y CSS a JavaScript y React.<br><br>
-      <code>HTML</code> <code>CSS</code> · <i>lo codeo yo</i><br>
-      <sub>🛠️ en construcción</sub>
-    </td>
-    <td width="50%" valign="top">
-      <h4>🐾 Mascota de escritorio</h4>
-      Un animalito que aparece en tu pantalla para recordarte descansar, comer o tomar agua. Hábitos sanos para quienes pasan el día frente a la compu.<br><br>
-      <code>Electron</code> · <i>construido con IA</i><br>
-      <sub>🔭 próximamente</sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h4>🛰️ API de la Cinemateca</h4>
-      El backend detrás de la cinemateca: reseñas, watchlist y login para que solo yo pueda publicar.<br><br>
-      <code>Node</code> <code>Express</code> <code>MongoDB</code> · <i>lo codeo yo</i><br>
-      <sub>🔭 próximamente</sub>
-    </td>
-    <td width="50%" valign="top">
-      <h4>💬 Preguntale a mi CV</h4>
-      Un chat con IA que responde sobre mi experiencia usando mi CV como fuente, con límites de uso para mantener el costo bajo control.<br><br>
-      <code>LLM</code> <code>API</code> · <i>construido con IA</i><br>
-      <sub>🔭 próximamente</sub>
-    </td>
-  </tr>
-</table>
+#### 🧭 Career Copilot
+
+*"No empieces por estudiar. Empezá por quién querés ser."*
+
+Plataforma de orientación vocacional con IA de punta a punta: arma un recorrido de aprendizaje personalizado a partir de tu CV, una conversación guiada y un test vocacional RIASEC. Un agente conversacional lleva el discovery, otro genera el recorrido cruzando el test con todo lo charlado (sin inventar cursos ni repetir el mismo tema en formatos distintos), y un tercero extrae la info real de tu CV aunque venga con el desorden de un PDF. Prompt engineering iterativo, salidas en JSON Schema, rate limiting y manejo server-side de la API key — construido para el Hackathon CoderCUP IA de Coderhouse.
+
+`React` `TypeScript` `Vercel` `Gemini` · *construido con IA*
+<br>✅ [demo en vivo](https://career-copilot-coderhouse.vercel.app) · [video](https://youtu.be/qslOCPU4wwQ) · [repo](https://github.com/antonellag/career-copilot-coderhouse)
+
+<br>
+
+#### 🎬 Cinemateca
+
+Mi espacio de cine: películas favoritas, fichas y reseñas. Crece conmigo, de HTML y CSS a JavaScript y React.
+
+`HTML` `CSS` · *lo codeo yo*
+<br>🛠️ en construcción
+
+<br>
+
+#### 🐾 Mascota de escritorio
+
+Un animalito que aparece en tu pantalla para recordarte descansar, comer o tomar agua. Hábitos sanos para quienes pasan el día frente a la compu.
+
+`Electron` · *construido con IA*
+<br>🔭 próximamente
+
+<br>
+
+#### 🛰️ API de la Cinemateca
+
+El backend detrás de la cinemateca: reseñas, watchlist y login para que solo yo pueda publicar.
+
+`Node` `Express` `MongoDB` · *lo codeo yo*
+<br>🔭 próximamente
+
+<br>
+
+#### 💬 Preguntale a mi CV
+
+Un chat con IA que responde sobre mi experiencia usando mi CV como fuente, con límites de uso para mantener el costo bajo control.
+
+`LLM` `API` · *construido con IA*
+<br>🔭 próximamente
 
 <sub>🌱 En paralelo estoy emprendiendo con proyectos propios, todavía en pleno desarrollo.</sub>
 
