@@ -58,7 +58,7 @@ Plataforma de orientación vocacional con IA de punta a punta: arma un recorrido
 `React` `TypeScript` `Vercel` `Gemini` · *construido con IA*
 <br>✅ [demo en vivo](https://career-copilot-coderhouse.vercel.app) · [video](https://youtu.be/qslOCPU4wwQ) · [repo](https://github.com/antonellag/career-copilot-coderhouse)
 
-<br>
+---
 
 #### 🎬 Cinemateca
 
@@ -67,7 +67,7 @@ Mi espacio de cine: películas favoritas, fichas y reseñas. Crece conmigo, de H
 `HTML` `CSS` · *lo codeo yo*
 <br>🛠️ en construcción
 
-<br>
+---
 
 #### 🐾 Mascota de escritorio
 
@@ -76,7 +76,7 @@ Un animalito que aparece en tu pantalla para recordarte descansar, comer o tomar
 `Electron` · *construido con IA*
 <br>🔭 próximamente
 
-<br>
+---
 
 #### 🛰️ API de la Cinemateca
 
@@ -85,7 +85,7 @@ El backend detrás de la cinemateca: reseñas, watchlist y login para que solo y
 `Node` `Express` `MongoDB` · *lo codeo yo*
 <br>🔭 próximamente
 
-<br>
+---
 
 #### 💬 Preguntale a mi CV
 
